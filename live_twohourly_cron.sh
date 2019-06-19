@@ -2,12 +2,12 @@
 
 source ~/env/bin/activate
 
-y=`ps -ef | grep -v "grep" | grep 'main.py' | awk '{ print $2 }'`
+y=`ps -ef | grep -v "grep" | grep '/home/manishkumar_zed/mirai/live/jts-flask-api/main.py' | awk '{ print $2 }'`
 
 if [ "$y" ]
 then
 	kill -9 ${y}
 fi
 
-cd /home/manishkumar_zed/jts-flask-api
-/home/manishkumar_zed/env/bin/python /home/manishkumar_zed/jts-flask-api/main.py
+cd /home/manishkumar_zed/mirai/live/jts-flask-api
+/home/manishkumar_zed/env/bin/python /home/manishkumar_zed/mirai/live/jts-flask-api/main.py
